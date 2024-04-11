@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #000000;
+}
+
+#calender {
+  width: 40rem;
+  aspect-ratio: 1/0.8;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  color: white;
+}
+#calender > nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+#calender > nav > button {
+  aspect-ratio: 1/1;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+#calender > nav > button:hover {
+  background: gray;
+}
+
+.dayWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+}
+.day .week-day {
+  font-size: 1.2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */
