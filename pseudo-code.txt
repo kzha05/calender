@@ -1,0 +1,17 @@
+calender
+- make a list of all the days
+- make a list of all the months
+- give all the months a number (1, 2, 3, 4, ...)
+- make the year a variable(?) that does +1 when the month is 12
+- render the days in a calender format (display: grid)
+- make the forward and backward buttons
+- show the current month and year on the top
+- when you click on the forward button, the next month is shown (month +1)
+- when you click on the backward button, the previous month is shown (month -1)
+- make it so that when you go to the next month, the days are rendered in the correct order
+- make it so that when you go to the previous month, the days are rendered in the correct order
+- update the year when the month is 12
+
+extra
+- make it so that the current day is highlighted
+- make it when you hover over a day, it shows the day in a different color

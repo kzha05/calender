@@ -20,7 +20,7 @@ function getDaysFromMonth(y, m) {
 	}
 
 	// Return the filled array
-	console.log(days);
+	// console.log(days);
 	return days;
 }
 

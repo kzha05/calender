@@ -1,10 +1,22 @@
-import { getDaysFromMonth } from './helpers/getDaysFromMonth.js';
+import renderCalenderMonth from './rendering/renderCalenderMonth.js';
+//variables
+const dayWrapper = document.getElementById('dayWrapper');
+const title = document.getElementById('title');
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
 
-const date = new Date;
-const days = getDaysFromMonth(date.getFullYear(), date.getUTCMonth());
+let date = new Date;
 
-console.log(days);
+renderCalenderMonth(date, title, dayWrapper);
 
-const day= new Date().getDay();
-const dayName = ['Sund', 'Mond', 'Tues', 'Wedn', 'Thur', 'Frid', 'Satu'];
-console.log(`Today is: ${dayName[day]}`);
+next.addEventListener('click', () => {
+    console.log('next');
+    date.setMonth(date.getMonth() + 1);
+    renderCalenderMonth(date, title, dayWrapper);
+});
+
+prev.addEventListener('click', () => {
+    console.log('prev');
+    date.setMonth(date.getMonth() - 1);
+    renderCalenderMonth(date, title, dayWrapper);
+});
